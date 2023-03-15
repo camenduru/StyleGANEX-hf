@@ -183,7 +183,7 @@ def create_demo_vediting(process, max_frame_num = 4):
                                     value=1,
                                     step=0.1)
                 frame_num = gr.Slider(label='Number of frames to edit (full video editing is not allowed so as not to slow down the demo, \
-                            but you can duplicate the Space to modify the number limit from 4 to a large value)',
+                            but you can duplicate the Space to modify the number limit to a large value)',
                                     minimum=1,
                                     maximum=max_frame_num,
                                     value=2,
@@ -217,7 +217,7 @@ def create_demo_vtoonify(process, max_frame_num = 4):
                 input_video = gr.Video(source='upload', mirror_webcam=False, type='filepath') 
                 style_type = gr.Radio(label='Style Type', choices=['Pixar','Cartoon','Arcane'], value='Pixar')
                 frame_num = gr.Slider(label='Number of frames to toonify (full video toonification is not allowed so as not to slow down the demo, \
-                            but you can duplicate the Space to modify the number limit from 4 to a large value)',
+                            but you can duplicate the Space to modify the number limit to a large value)',
                                     minimum=1,
                                     maximum=max_frame_num,
                                     value=2,
