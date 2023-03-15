@@ -54,30 +54,30 @@ If you have any questions, please feel free to reach me out at <b>williamyang@pk
 
 FOOTER = '<div align=center><img id="visitor-badge" alt="visitor badge" src="https://visitor-badge.laobi.icu/badge?page_id=williamyang1991/styleganex" /></div>'
 
-
-torch.hub.download_url_to_file('https://raw.githubusercontent.com/williamyang1991/StyleGANEX/main/data/234_sketch.jpg',
-    '234_sketch.jpg')
-torch.hub.download_url_to_file('https://github.com/williamyang1991/StyleGANEX/raw/main/output/ILip77SbmOE_inversion.pt',
-    'ILip77SbmOE_inversion.pt')
-torch.hub.download_url_to_file('https://raw.githubusercontent.com/williamyang1991/StyleGANEX/main/data/ILip77SbmOE.png',
-    'ILip77SbmOE.png')
-torch.hub.download_url_to_file('https://raw.githubusercontent.com/williamyang1991/StyleGANEX/main/data/ILip77SbmOE_mask.png',
-    'ILip77SbmOE_mask.png')
-torch.hub.download_url_to_file('https://raw.githubusercontent.com/williamyang1991/StyleGANEX/main/data/pexels-daniel-xavier-1239291.jpg',
-    'pexels-daniel-xavier-1239291.jpg')
-torch.hub.download_url_to_file('https://github.com/williamyang1991/StyleGANEX/raw/main/data/529_2.mp4',
-    '529_2.mp4')
-torch.hub.download_url_to_file('https://github.com/williamyang1991/StyleGANEX/raw/main/data/684.mp4',
-    '684.mp4')
-torch.hub.download_url_to_file('https://github.com/williamyang1991/StyleGANEX/raw/main/data/pexels-anthony-shkraba-production-8136210.mp4',
-    'pexels-anthony-shkraba-production-8136210.mp4')    
-
-
 def main():
     args = parse_args()
     args.device = 'cuda' if torch.cuda.is_available() else 'cpu'
     print('*** Now using %s.'%(args.device))
     model = Model(device=args.device)
+
+
+    torch.hub.download_url_to_file('https://raw.githubusercontent.com/williamyang1991/StyleGANEX/main/data/234_sketch.jpg',
+        '234_sketch.jpg')
+    torch.hub.download_url_to_file('https://github.com/williamyang1991/StyleGANEX/raw/main/output/ILip77SbmOE_inversion.pt',
+        'ILip77SbmOE_inversion.pt')
+    torch.hub.download_url_to_file('https://raw.githubusercontent.com/williamyang1991/StyleGANEX/main/data/ILip77SbmOE.png',
+        'ILip77SbmOE.png')
+    torch.hub.download_url_to_file('https://raw.githubusercontent.com/williamyang1991/StyleGANEX/main/data/ILip77SbmOE_mask.png',
+        'ILip77SbmOE_mask.png')
+    torch.hub.download_url_to_file('https://raw.githubusercontent.com/williamyang1991/StyleGANEX/main/data/pexels-daniel-xavier-1239291.jpg',
+        'pexels-daniel-xavier-1239291.jpg')
+    torch.hub.download_url_to_file('https://github.com/williamyang1991/StyleGANEX/raw/main/data/529_2.mp4',
+        '529_2.mp4')
+    torch.hub.download_url_to_file('https://github.com/williamyang1991/StyleGANEX/raw/main/data/684.mp4',
+        '684.mp4')
+    torch.hub.download_url_to_file('https://github.com/williamyang1991/StyleGANEX/raw/main/data/pexels-anthony-shkraba-production-8136210.mp4',
+        'pexels-anthony-shkraba-production-8136210.mp4')    
+
     
     with gr.Blocks(css='style.css') as demo:
         gr.Markdown(DESCRIPTION) 
