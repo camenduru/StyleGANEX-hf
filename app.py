@@ -87,11 +87,11 @@ def main():
             with gr.TabItem('Image Face Toonify'):
                 create_demo_toonify(model.process_toonify)               
             with gr.TabItem('Video Face Toonify'):
-                create_demo_vtoonify(model.process_vtoonify, max_frame_num=4)                      
+                create_demo_vtoonify(model.process_vtoonify, max_frame_num=12)                      
             with gr.TabItem('Image Face Editing'):
                 create_demo_editing(model.process_editing)  
             with gr.TabItem('Video Face Editing'):
-                create_demo_vediting(model.process_vediting, max_frame_num=4)               
+                create_demo_vediting(model.process_vediting, max_frame_num=12)               
             with gr.TabItem('Sketch2Face'):
                 create_demo_s2f(model.process_s2f)   
             with gr.TabItem('Mask2Face'):
