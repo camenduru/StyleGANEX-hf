@@ -1,0 +1,7 @@
+torch==1.7.1
+torchvision
+dlib
+numpy
+opencv-contrib-python
+Pillow
+scipy

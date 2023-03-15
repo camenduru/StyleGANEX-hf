@@ -1,7 +1,0 @@
-dlib
-numpy
-opencv-python-headless
-Pillow
-scipy
-torch
-torchvision
