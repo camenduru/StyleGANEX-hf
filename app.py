@@ -82,8 +82,8 @@ def main():
     with gr.Blocks(css='style.css') as demo:
         gr.Markdown(DESCRIPTION) 
         with gr.Tabs():
-            with gr.TabItem('Inversion for Editing'):
-                create_demo_inversion(model.process_inversion, allow_optimization=False)          
+            #with gr.TabItem('Inversion for Editing'):
+            #    create_demo_inversion(model.process_inversion, allow_optimization=False)          
             with gr.TabItem('Image Face Toonify'):
                 create_demo_toonify(model.process_toonify)               
             with gr.TabItem('Video Face Toonify'):
