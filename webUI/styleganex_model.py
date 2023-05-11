@@ -32,7 +32,7 @@ class Model():
         self.task_name = None
         self.editing_w = None
         self.pspex = None
-        self.landmarkpredictor = dlib.shape_predictor(hf_hub_download('PKUWilliamYang/VToonify', 'models/shape_predictor_68_face_landmarks.dat'))
+        self.landmarkpredictor = dlib.shape_predictor(hf_hub_download('PKUWilliamYang/StyleGANEX', 'pretrained_models/shape_predictor_68_face_landmarks.dat'))
         self.transform = transforms.Compose([
             transforms.ToTensor(),
             transforms.Normalize(mean=[0.5, 0.5, 0.5],std=[0.5,0.5,0.5]),
