@@ -1,4 +1,4 @@
-torch==1.7.1
+torch
 torchvision
 dlib
 numpy
@@ -7,4 +7,3 @@ Pillow
 scipy
 scikit-image
 ipython
-gradio==3.23.0
